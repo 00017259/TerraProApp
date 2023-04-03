@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <link href=
+"https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+          rel="stylesheet">
+</head>
+ 
+<body>
+    <div class="h-full border-2 border-gray-200
+                border-opacity-60 rounded-lg
+                overflow-hidden">
+ 
+        <div class="p-6 hover:bg-green-600
+                    hover:text-white transition
+                    duration-300 ease-in">
+ 
+                    <h1 class="text-2xl font-semibold mb-3">
+                      <a href="/"><img src="/images/logo.png" width="200" alt=""></a> 
+                  </h1>
+            <h3 class="text-2xl font-semibold mb-3">
+                <a href="/items">Одежды</a>
+            </h3>
+            <h3 class="text-2xl font-semibold mb-3">
+                <a href="/items/new">Добавить новые товары</a>
+            </h3>
+        </div>
+    </div>
+<div class="flex items-center justify-center p-12">
+    <div class="mx-auto w-full max-w-[550px]">
+      <form action="/items/new" method="POST">
+        <div class="-mx-3 flex flex-wrap">
+          <div class="w-full px-3 sm:w-1/2">
+            <div class="mb-5">
+              <label
+                for="fName"
+                class="mb-3 block text-base font-medium text-[#07074D]"
+              >
+                Title
+              </label>
+              <input
+                type="text"
+                name="title"
+                id="fName"
+                placeholder="Title"
+                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+              />
+            </div>
+          </div>
+          <div class="w-full px-3 sm:w-1/2">
+            <div class="mb-5">
+              <label
+                for="lName"
+                class="mb-3 block text-base font-medium text-[#07074D]"
+              >
+                Color
+              </label>
+              <input
+                type="text"
+                name="color"
+                id="lName"
+                placeholder="Color"
+                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="-mx-3 flex flex-wrap">
+            <div class="w-full px-3 sm:w-1/2">
+              <div class="mb-5">
+                <label
+                  for="fName"
+                  class="mb-3 block text-base font-medium text-[#07074D]"
+                >
+                  Price
+                </label>
+                <input
+                  type="number"
+                  name="price"
+                  id="fName"
+                  placeholder="Сум"
+                  class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                />
+              </div>
+            </div>
+            <div class="w-full px-3 sm:w-1/2">
+              <div class="mb-5">
+                <label
+                  for="lName"
+                  class="mb-3 block text-base font-medium text-[#07074D]"
+                >
+                  Discount
+                </label>
+                <input
+                  type="number"
+                  name="discount"
+                  id="lName"
+                  placeholder="Discount"
+                  class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="mb-5">
+            <label
+              for="guest"
+              class="mb-3 block text-base font-medium text-[#07074D]"
+            >
+              Size
+            </label>
+            <input
+              type="text"
+              name="size"
+              id="guest"
+              placeholder="XS-S-M-L-XL-XXL-XXXL"
+              min="0"
+              class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+            />
+          </div>
+        <div class="mb-5">
+          <label
+            for="guest"
+            class="mb-3 block text-base font-medium text-[#07074D]"
+          >
+            Image URL
+          </label>
+          <input
+            type="text"
+            name="image"
+            id="guest"
+            placeholder="Image URL"
+            min="0"
+            class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+          />
+        </div>
+  
+        <div class=class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md">
+          <button
+            class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md">Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
