@@ -83,8 +83,6 @@ router.delete('/delete/:id', (req, res) => {
 module.exports = router
 
 
-
-
 function  getAll(collection) {
     return JSON.parse(fs.readFileSync(`./data/${collection}.json`))
 }
