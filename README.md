@@ -6,7 +6,7 @@ All operations like GET, UPDATE, DELETE, ADD functions are implemented in the pr
 #### Intsructions
 1. Cloning the source code
 ```bash 
-git clone 
+git clone https://github.com/00017259/TerraProApp.git
 ```
 
 2.  Dependency installation
@@ -28,6 +28,6 @@ node server
 
 
 ### Public repo
-
+https://github.com/00017259/TerraProApp.git
 
 ### Hosted App:
